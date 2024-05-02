@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var body = document.querySelector("body");
+        body.style.margin = "0";
+
+        var container = document.createElement("div");
+        container.style.display = "flex";
+        container.style.flexDirection ="column";
+        container.style.height = "100vh";
+        container.style.width = "100%";
+        container.style.position = "relative";
+        container.style.justifyContent = "space-between";
+        body.appendChild(container);
+
+        //add black div
+        var black = document.createElement("div");
+        black.style.height = "33.33333%";
+        black.style.backgroundColor = "black"
+        container.appendChild(black);
+
+        //add green div
+        var green = document.createElement("div");
+        green.style.height = "33.33333%";
+        green.style.backgroundColor = "green"
+        container.appendChild(green);
+
+        //add red div
+        var red = document.createElement("div");
+        red.style.borderWidth = "50vh";
+        red.style.borderColor = "transparent transparent transparent red";
+        red.style.position = "absolute";
+        red.style.borderStyle = "solid";
+        container.appendChild(red);
+    </script>
+</body>
+</html>
